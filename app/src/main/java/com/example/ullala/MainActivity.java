@@ -9,7 +9,7 @@ import android.content.Intent;
 import java.util.logging.LogRecord;
 
 public class MainActivity extends AppCompatActivity {
-    private final int SPLASH_DISPLAY_LENGTH = 3000;
+    private final int SPLASH_DISPLAY_LENGTH = 1500;
     Handler handler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
