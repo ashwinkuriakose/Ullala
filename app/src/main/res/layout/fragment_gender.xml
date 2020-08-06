@@ -4,48 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NameFragment">
+    tools:context=".GenderFragment">
 
-    <ImageView
-        android:id="@+id/login_image"
-        android:layout_width="142dp"
-        android:layout_height="170dp"
-        android:layout_marginTop="64dp"
+    <Button
+        android:id="@+id/btnFemale"
+        android:layout_width="124dp"
+        android:layout_height="56dp"
+        android:background="@drawable/text_input_bg"
+        android:text="Female"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.647" />
 
     <TextView
         android:id="@+id/login_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/open_sans_bold"
-        android:text="Enter your name"
+        android:text="Select your Gender"
         android:textColor="@color/colorPrimary"
         android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_image" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302" />
 
-    <EditText
-        android:id="@+id/phone_number_text"
-        android:layout_width="329dp"
+    <Button
+        android:id="@+id/btnMale"
+        android:layout_width="124dp"
         android:layout_height="56dp"
-        android:layout_marginTop="16dp"
         android:background="@drawable/text_input_bg"
-        android:ems="10"
-        android:fontFamily="@font/open_sans_semibold"
-        android:hint="Enter your name"
-        android:inputType="phone"
-        android:padding="16dp"
-        android:textColorHint="@android:color/darker_gray"
-        android:textSize="16sp"
+        android:text="Male"
+        android:textColor="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_title"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
