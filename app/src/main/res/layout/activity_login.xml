@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login"
-   >
+    tools:context=".login">
 
 
     <ImageView
@@ -22,12 +21,13 @@
         android:id="@+id/login_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="52dp"
         android:fontFamily="@font/open_sans_bold"
         android:text="Verify Your Number"
         android:textColor="@color/colorPrimary"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_image" />
 
@@ -36,33 +36,38 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/open_sans_semibold"
-        android:textColor="@color/lightGray"
         android:text="Please enter your Country Code \n and Phone number for verification"
         android:textAlignment="center"
+        android:textColor="@color/lightGray"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_title" />
+
 
     <EditText
         android:id="@+id/country_code_text"
         android:layout_width="64dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/text_input_bg"
         android:ems="10"
         android:fontFamily="@font/open_sans_semibold"
         android:hint="+91"
-        android:maxLength="3"
-        android:textColor="@color/grey"
         android:inputType="number"
-        android:textColorHint="@android:color/darker_gray"
+        android:maxLength="3"
         android:padding="16dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@android:color/darker_gray"
         android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/phonenumber_text"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_desc" />
 
@@ -70,20 +75,20 @@
         android:id="@+id/phonenumber_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/text_input_bg"
         android:ems="10"
-        android:maxLength="10"
-        android:textColor="@color/grey"
         android:fontFamily="@font/open_sans_semibold"
         android:hint="Your Phone Number"
         android:inputType="phone"
+        android:maxLength="10"
         android:padding="16dp"
+        android:textColor="@color/grey"
         android:textColorHint="@android:color/darker_gray"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/country_code_text"
         app:layout_constraintTop_toBottomOf="@+id/login_desc" />
 
@@ -92,6 +97,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="42dp"
         android:background="@drawable/primary_btn_bg"
@@ -102,9 +108,9 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phonenumber_text" />
-
+        app:layout_constraintTop_toBottomOf="@+id/country_code_text" />
 
     <ProgressBar
         android:id="@+id/login_progress_bar"
@@ -116,8 +122,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/generate_btn"
         app:layout_constraintEnd_toEndOf="@+id/generate_btn"
         app:layout_constraintTop_toTopOf="@+id/generate_btn" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

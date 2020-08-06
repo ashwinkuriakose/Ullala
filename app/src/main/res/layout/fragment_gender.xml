@@ -10,38 +10,38 @@
         android:id="@+id/btnFemale"
         android:layout_width="124dp"
         android:layout_height="56dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/text_input_bg"
-        android:text="Female"
+        android:text="WOMEN"
         android:textColor="@color/grey"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.647" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMale" />
 
     <TextView
         android:id="@+id/login_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
         android:fontFamily="@font/open_sans_bold"
-        android:text="Select your Gender"
+        android:text="I am a"
         android:textColor="@color/colorPrimary"
         android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnMale"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.302" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnMale"
         android:layout_width="124dp"
         android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="200dp"
         android:background="@drawable/text_input_bg"
-        android:text="Male"
+        android:text="MEN"
         android:textColor="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
